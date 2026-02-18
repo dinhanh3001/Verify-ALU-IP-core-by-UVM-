@@ -1,0 +1,67 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /top/bfm
+=== Design Unit: work.tinyalu_if
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         4         2         2    50.00%
+    Conditions                       3         1         2    33.33%
+    Statements                      26        21         5    80.76%
+
+=================================================================================
+=== Instance: /top/dut
+=== Design Unit: work.tinyalu
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         8         1    88.88%
+    Statements                      10         9         1    90.00%
+
+=================================================================================
+=== Instance: /top
+=== Design Unit: work.top
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       8         8         0   100.00%
+
+=================================================================================
+=== Instance: /uvm_pkg
+=== Design Unit: work.uvm_pkg
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                       1         1         0   100.00%
+
+=================================================================================
+=== Instance: /tinyalu_pkg
+=== Design Unit: work.tinyalu_pkg
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         0        10     0.00%
+    Conditions                       2         0         2     0.00%
+    Statements                      13         4         9    30.76%
+
+=================================================================================
+=== Instance: /top_sv_unit
+=== Design Unit: work.top_sv_unit
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        56        21        35    37.50%
+    Conditions                       5         1         4    20.00%
+    Covergroups                      1        na        na    50.00%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins          7         5         2    71.42%
+    Statements                      97        62        35    63.91%
+
+
+TOTAL COVERGROUP COVERAGE: 50.00%  COVERGROUP TYPES: 1
+
+TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 1
+
+Total Coverage By Instance (filtered view): 55.35%
+

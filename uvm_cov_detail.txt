@@ -1,0 +1,783 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/bfm
+=== Design Unit: work.tinyalu_if
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         4         2         2    50.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /top/bfm
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File tinyalu_if.sv
+------------------------------------IF Branch------------------------------------
+    38                                       100     Count coming in to IF
+    38              1                    ***0***     
+    44              1                        100     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    66                                       100     Count coming in to IF
+    66              1                    ***0***     
+    70              1                        100     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       3         1         2    33.33%
+
+================================Condition Details================================
+
+Condition Coverage for instance /top/bfm --
+
+  File tinyalu_if.sv
+----------------Focused Condition View-------------------
+Line       38 Item    1  (iop == NO_OP)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (iop == NO_OP)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (iop == NO_OP)_0      -                             
+  Row   2:    ***0***  (iop == NO_OP)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       48 Item    1  (done === 1'b0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       66 Item    1  (mop == NO_OP)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (mop == NO_OP)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (mop == NO_OP)_0      -                             
+  Row   2:    ***0***  (mop == NO_OP)_1      -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      26        21         5    80.76%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top/bfm --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File tinyalu_if.sv
+    19              1                          1     
+    20              1                          1     
+    21              1                          1     
+    22              1                          1     
+    24              1                          2     
+    24              2                          2     
+    30              1                        100     
+    32              1                        100     
+    33              1                        100     
+    34              1                        100     
+    35              1                        100     
+    40              1                    ***0***     
+    41              1                    ***0***     
+    42              1                    ***0***     
+    46              1                        200     
+    47              1                        200     
+    50              1                        100     
+    51              1                        100     
+    59              1                        101     
+    61              1                        100     
+    62              1                        100     
+    63              1                        100     
+    67              1                    ***0***     
+    68              1                    ***0***     
+    71              1                        100     
+    72              1                        100     
+
+=================================================================================
+=== Instance: /top/dut
+=== Design Unit: work.tinyalu
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         9         8         1    88.88%
+
+================================Branch Details================================
+
+Branch Coverage for instance /top/dut
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File tinyalu.sv
+------------------------------------IF Branch------------------------------------
+    13                                       304     Count coming in to IF
+    13              1                          2     
+    16              1                        302     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    18                                       302     Count coming in to IF
+    18              1                        200     
+                                             102     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    20                                       200     Count coming in to CASE
+    21              1                         48     
+    22              1                         62     
+    23              1                         40     
+    24              1                         50     
+    25              1                    ***0***     
+Branch totals: 4 hits of 5 branches = 80.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      10         9         1    90.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top/dut --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File tinyalu.sv
+    12              1                        304     
+    14              1                          2     
+    15              1                          2     
+    17              1                        302     
+    19              1                        200     
+    21              1                         48     
+    22              1                         62     
+    23              1                         40     
+    24              1                         50     
+    25              1                    ***0***     
+
+=================================================================================
+=== Instance: /top
+=== Design Unit: work.top
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       8         8         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top --
+NOTE: The modification timestamp for source file 'top.sv' has been altered since compilation.
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File top.sv
+    25              1                        624     
+    25              2                        623     
+    28              1                          1     
+    28              2                          1     
+    29              1                          1     
+    29              2                          1     
+    48              1                          1     
+    52              1                          1     
+
+=================================================================================
+=== Instance: /uvm_pkg
+=== Design Unit: work.uvm_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/uvm_pkg/uvm_component_name_check_visitor/visit/immed__262
+                     /home/dinhanh/Downloads/questa_install/questasim/verilog_src/uvm-1.2/src/base/uvm_traversal.svh(262)
+                                                        0          1
+
+=================================================================================
+=== Instance: /tinyalu_pkg
+=== Design Unit: work.tinyalu_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10         0        10     0.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tinyalu_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File command_transaction.sv
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               1                    ***0***     
+    5               2                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               3                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               4                    ***0***     
+    5               5                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               7                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         0         2     0.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /tinyalu_pkg --
+
+  File command_transaction.sv
+----------------Focused Condition View-------------------
+Line       5 Item    1  (name == 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name == 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name == 0)_0         -                             
+  Row   2:    ***0***  (name == 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       5 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:    ***0***  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      13         4         9    30.76%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tinyalu_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File command_transaction.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                    ***0***     
+    5               4                    ***0***     
+    5               5                    ***0***     
+    5               6                        100     
+    5               7                    ***0***     
+    5               8                    ***0***     
+    5               9                    ***0***     
+    5              10                    ***0***     
+    13              1                        201     
+    19              1                        345     
+    20              1                        345     
+
+=================================================================================
+=== Instance: /top_sv_unit
+=== Design Unit: work.top_sv_unit
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        56        21        35    37.50%
+
+================================Branch Details================================
+
+Branch Coverage for instance /top_sv_unit
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File random_sequence.sv
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               1                    ***0***     
+    5               2                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               3                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               4                    ***0***     
+    5               5                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               7                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                       100     Count coming in to IF
+    23              1                    ***0***     
+                                             100     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                   ***0***     Count coming in to IF
+    23              2                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                       100     Count coming in to IF
+    28              1                        100     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File monitor.sv
+------------------------------------IF Branch------------------------------------
+    17                                         1     Count coming in to IF
+    17              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    18                                   ***0***     Count coming in to IF
+    18              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    30                                       100     Count coming in to IF
+    30              1                        100     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File driver.sv
+------------------------------------IF Branch------------------------------------
+    19                                         1     Count coming in to IF
+    19              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    20                                   ***0***     Count coming in to IF
+    20              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    34                                       100     Count coming in to IF
+    34              1                        100     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File agent.sv
+------------------------------------IF Branch------------------------------------
+    59                                         1     Count coming in to IF
+    59              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    66                                         1     Count coming in to IF
+    66              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File scoreboard.sv
+------------------------------------CASE Branch------------------------------------
+    17                                       100     Count coming in to CASE
+    18              1                         24     
+    19              1                         31     
+    20              1                         20     
+    21              1                         25     
+    22              1                    ***0***     
+    23              1                    ***0***     
+Branch totals: 4 hits of 6 branches = 66.66%
+
+------------------------------------IF Branch------------------------------------
+    28                                       100     Count coming in to IF
+    28              1                        100     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    29                                       100     Count coming in to IF
+    29              1                         55     
+    33              1                         45     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    30                                        55     Count coming in to IF
+    30              1                         55     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    34                                        45     Count coming in to IF
+    34              1                         45     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File functional_coverage.sv
+------------------------------------IF Branch------------------------------------
+    63                                         1     Count coming in to IF
+    63              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    64                                         1     Count coming in to IF
+    64              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    65                                         1     Count coming in to IF
+    65              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File base_test.sv
+------------------------------------IF Branch------------------------------------
+    17                                         1     Count coming in to IF
+    17              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    18                                   ***0***     Count coming in to IF
+    18              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       5         1         4    20.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /top_sv_unit --
+
+  File random_sequence.sv
+----------------Focused Condition View-------------------
+Line       5 Item    1  (name == 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name == 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name == 0)_0         -                             
+  Row   2:    ***0***  (name == 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       5 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:    ***0***  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+
+
+
+----------------Focused Condition View-------------------
+Line       28 Item    1  ((t.op != NO_OP) && (t.op != RST_OP))
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+        Input Term   Covered  Reason for no coverage   Hint
+       -----------  --------  -----------------------  --------------
+   (t.op != NO_OP)         N  '_0' not hit             Hit '_0'
+  (t.op != RST_OP)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (t.op != NO_OP)_0     -                             
+  Row   2:          1  (t.op != NO_OP)_1     (t.op != RST_OP)              
+  Row   3:    ***0***  (t.op != RST_OP)_0    (t.op != NO_OP)               
+  Row   4:          1  (t.op != RST_OP)_1    (t.op != NO_OP)               
+
+----------------Focused Condition View-------------------
+Line       29 Item    1  (expected !== t.result)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+
+
+
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    50.00%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins          7         5         2    71.42%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /top_sv_unit/functional_coverage/op_cov          50.00%        100          -    Uncovered            
+    covered/total bins:                                     5          7          -                      
+    missing/total bins:                                     2          7          -                      
+    % Hit:                                             71.42%        100          -                      
+    Coverpoint cp_op                                  100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin rst                                      0                     -    ZERO                 
+        bin single_ops[ADD_OP]                             24          1          -    Covered              
+        bin single_ops[AND_OP]                             31          1          -    Covered              
+        bin single_ops[XOR_OP]                             20          1          -    Covered              
+        bin single_ops[MUL_OP]                             25          1          -    Covered              
+    Coverpoint cp_A                                   100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zeros                                           2          1          -    Covered              
+        default bin other                                  98                     -    Occurred             
+    Coverpoint cp_B                                     0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          1          -                      
+        missing/total bins:                                 1          1          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin zeros                                           0          1          -    ZERO                 
+        default bin others                                100                     -    Occurred             
+    Cross cross_op_A_B                                  0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          1          -                      
+        missing/total bins:                                 1          1          -                      
+        % Hit:                                          0.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin mul_zero                                    0          1          -    ZERO                 
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      97        62        35    63.91%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top_sv_unit --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File random_sequence.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                    ***0***     
+    5               4                    ***0***     
+    5               5                    ***0***     
+    5               6                          1     
+    5               7                    ***0***     
+    5               8                    ***0***     
+    5               9                    ***0***     
+    5              10                    ***0***     
+    7               1                          1     
+    15              1                        100     
+    17              1                        100     
+    20              1                        100     
+    23              1                    ***0***     
+    26              1                        100     
+    28              1                        100     
+  File monitor.sv
+    4               1                    ***0***     
+    4               2                    ***0***     
+    4               3                    ***0***     
+    13              1                          1     
+    14              1                          1     
+    18              1                    ***0***     
+    23              1                          1     
+    24              1                        101     
+    27              1                        101     
+    30              1                        100     
+    33              1                        100     
+  File driver.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                    ***0***     
+    12              1                          1     
+    18              1                          1     
+    20              1                    ***0***     
+    28              1                          1     
+    31              1                        101     
+    34              1                        100     
+    36              1                        100     
+    39              1                        100     
+  File agent.sv
+    43              1                    ***0***     
+    43              2                    ***0***     
+    43              3                    ***0***     
+    51              1                          1     
+    55              1                          1     
+    56              1                          1     
+    57              1                          1     
+    60              1                          1     
+    61              1                          1     
+    67              1                          1     
+    70              1                          1     
+  File scoreboard.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                    ***0***     
+    7               1                          1     
+    14              1                        100     
+    18              1                         24     
+    19              1                         31     
+    20              1                         20     
+    21              1                         25     
+    22              1                    ***0***     
+    23              1                    ***0***     
+    30              1                         55     
+    34              1                         45     
+  File functional_coverage.sv
+    2               1                    ***0***     
+    2               2                    ***0***     
+    2               3                    ***0***     
+    47              1                          1     
+    49              1                          1     
+    56              1                        100     
+    58              1                        100     
+    61              1                          1     
+    63              1                          1     
+    64              1                          1     
+    65              1                          1     
+  File env.sv
+    32              1                    ***0***     
+    32              2                    ***0***     
+    32              3                    ***0***     
+    40              1                          1     
+    44              1                          1     
+    45              1                          1     
+    46              1                          1     
+    47              1                          1     
+    52              1                          1     
+    54              1                          1     
+  File base_test.sv
+    2               1                    ***0***     
+    2               2                    ***0***     
+    2               3                          1     
+    9               1                          1     
+    13              1                          1     
+    14              1                          1     
+    18              1                    ***0***     
+    24              1                          1     
+    27              1                          1     
+    29              1                          1     
+    30              1                          1     
+    33              1                          1     
+    34              1                          1     
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /top_sv_unit/functional_coverage/op_cov          50.00%        100          -    Uncovered            
+    covered/total bins:                                     5          7          -                      
+    missing/total bins:                                     2          7          -                      
+    % Hit:                                             71.42%        100          -                      
+    Coverpoint cp_op                                  100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        ignore_bin rst                                      0                     -    ZERO                 
+        bin single_ops[ADD_OP]                             24          1          -    Covered              
+        bin single_ops[AND_OP]                             31          1          -    Covered              
+        bin single_ops[XOR_OP]                             20          1          -    Covered              
+        bin single_ops[MUL_OP]                             25          1          -    Covered              
+    Coverpoint cp_A                                   100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zeros                                           2          1          -    Covered              
+        default bin other                                  98                     -    Occurred             
+    Coverpoint cp_B                                     0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          1          -                      
+        missing/total bins:                                 1          1          -                      
+        % Hit:                                          0.00%        100          -                      
+        bin zeros                                           0          1          -    ZERO                 
+        default bin others                                100                     -    Occurred             
+    Cross cross_op_A_B                                  0.00%        100          -    ZERO                 
+        covered/total bins:                                 0          1          -                      
+        missing/total bins:                                 1          1          -                      
+        % Hit:                                          0.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin mul_zero                                    0          1          -    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 50.00%  COVERGROUP TYPES: 1
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/uvm_pkg/uvm_component_name_check_visitor/visit/immed__262
+                     /home/dinhanh/Downloads/questa_install/questasim/verilog_src/uvm-1.2/src/base/uvm_traversal.svh(262)
+                                                        0          1
+
+Total Coverage By Instance (filtered view): 55.35%
+

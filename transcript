@@ -1,0 +1,535 @@
+# vsim -c -cpppath /usr/bin/g++ -coverage opt_test -do "run -all; coverage save final.ucdb; quit" 
+# Start time: 16:34:50 on Feb 16,2026
+# Loading /tmp/dinhanh@dinhanh-ASUS-TUF-Gaming_dpi_6332/linux_x86_64_gcc-13/export_tramp.so
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.uvm_pkg(fast)
+# Loading work.tinyalu_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.tinyalu_if(fast__2)
+# Loading work.tinyalu(fast)
+# Loading work.tinyalu_if(fast)
+# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler /usr/bin/g++ set by the -cpppath switch.
+# Compiling /tmp/dinhanh@dinhanh-ASUS-TUF-Gaming_dpi_6332/linux_x86_64_gcc-13/exportwrapper.c
+# Loading /tmp/dinhanh@dinhanh-ASUS-TUF-Gaming_dpi_6332/linux_x86_64_gcc-13/vsim_auto_compile.so
+# run -all
+# UVM_INFO /home/dinhanh/Downloads/questa_install/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test full_test...
+# ** Warning: (vsim-8474) A higher value '255' is found in bin 'max' of Coverpoint 'cp_A'. It is invalid and will be ignored.
+#    Time: 0 ns  Iteration: 10  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#2213_7feff02c747 File: functional_coverage.sv Line: 22
+# ** Warning: (vsim-8549) After dropping the illegal, ignore or invalid values, the values list associated with scalar bin 'max' in Coverpoint 'cp_A' of Covergroup instance '\/top_sv_unit::functional_coverage::op_cov ' has converged to empty list. The bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 10  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8474) A higher value '255' is found in bin 'max' of Coverpoint 'cp_B'. It is invalid and will be ignored.
+#    Time: 0 ns  Iteration: 10  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#2213_7feff02c747 File: functional_coverage.sv Line: 29
+# ** Warning: (vsim-8549) After dropping the illegal, ignore or invalid values, the values list associated with scalar bin 'max' in Coverpoint 'cp_B' of Covergroup instance '\/top_sv_unit::functional_coverage::op_cov ' has converged to empty list. The bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 10  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8554) The expression 'binsof(cp_A.max)' inside the select expression of Bin 'mul_max' of Cross 'cross_op_A_B' in Covergroup instance '\/top_sv_unit::functional_coverage::op_cov ' is an empty user bin. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 10  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8554) The expression 'binsof(cp_B.max)' inside the select expression of Bin 'mul_max' of Cross 'cross_op_A_B' in Covergroup instance '\/top_sv_unit::functional_coverage::op_cov ' is an empty user bin. The binsof expression will result in an empty set.
+#    Time: 0 ns  Iteration: 10  Region: /uvm_pkg::uvm_phase::m_run_phases
+# ** Warning: (vsim-8560) On evaluating the select expression of Cross bin 'cross_op_A_B.mul_max' in Covergroup instance '\/top_sv_unit::functional_coverage::op_cov ', the bin is found to be empty since no cross products are selected.
+#    Time: 0 ns  Iteration: 10  Region: /uvm_pkg::uvm_phase::m_run_phases
+# UVM_INFO full_test.sv(19) @ 15: uvm_test_top [TEST] ===== BAT DAU RANDOM TEST =====
+# UVM_INFO driver.sv(34) @ 15: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 00 OP: XOR_OP B: 90  result: 0000
+# UVM_INFO monitor.sv(30) @ 45: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 00 OP: XOR_OP B: 90  result: 0090
+# UVM_ERROR scoreboard.sv(30) @ 45: uvm_test_top.My env.scb [SCB] SAI ROI! A: 0, B: -112, Op: XOR_OP. DUT ra: 144, Dung la: -112
+# UVM_INFO random_sequence.sv(28) @ 45: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 00 OP: XOR_OP B: 90  result: 0090
+# UVM_INFO driver.sv(34) @ 45: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: f1 OP: AND_OP B: f9  result: 0000
+# UVM_INFO monitor.sv(30) @ 75: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: f1 OP: AND_OP B: f9  result: 00f1
+# UVM_ERROR scoreboard.sv(30) @ 75: uvm_test_top.My env.scb [SCB] SAI ROI! A: -15, B: -7, Op: AND_OP. DUT ra: 241, Dung la: -15
+# UVM_INFO random_sequence.sv(28) @ 75: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: f1 OP: AND_OP B: f9  result: 00f1
+# UVM_INFO driver.sv(34) @ 75: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 61 OP: AND_OP B: 9e  result: 0000
+# UVM_INFO monitor.sv(30) @ 105: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 61 OP: AND_OP B: 9e  result: 0000
+# UVM_INFO scoreboard.sv(34) @ 105: uvm_test_top.My env.scb [SCB] DUNG: A: 61 OP: AND_OP B: 9e  result: 0000
+# UVM_INFO random_sequence.sv(28) @ 105: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 61 OP: AND_OP B: 9e  result: 0000
+# UVM_INFO driver.sv(34) @ 105: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: b4 OP: AND_OP B: 72  result: 0000
+# UVM_INFO monitor.sv(30) @ 135: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: b4 OP: AND_OP B: 72  result: 0030
+# UVM_INFO scoreboard.sv(34) @ 135: uvm_test_top.My env.scb [SCB] DUNG: A: b4 OP: AND_OP B: 72  result: 0030
+# UVM_INFO random_sequence.sv(28) @ 135: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: b4 OP: AND_OP B: 72  result: 0030
+# UVM_INFO driver.sv(34) @ 135: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: fb OP: AND_OP B: 12  result: 0000
+# UVM_INFO monitor.sv(30) @ 165: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: fb OP: AND_OP B: 12  result: 0012
+# UVM_INFO scoreboard.sv(34) @ 165: uvm_test_top.My env.scb [SCB] DUNG: A: fb OP: AND_OP B: 12  result: 0012
+# UVM_INFO random_sequence.sv(28) @ 165: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: fb OP: AND_OP B: 12  result: 0012
+# UVM_INFO driver.sv(34) @ 165: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: c9 OP: AND_OP B: 91  result: 0000
+# UVM_INFO monitor.sv(30) @ 195: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: c9 OP: AND_OP B: 91  result: 0081
+# UVM_ERROR scoreboard.sv(30) @ 195: uvm_test_top.My env.scb [SCB] SAI ROI! A: -55, B: -111, Op: AND_OP. DUT ra: 129, Dung la: -127
+# UVM_INFO random_sequence.sv(28) @ 195: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: c9 OP: AND_OP B: 91  result: 0081
+# UVM_INFO driver.sv(34) @ 195: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 60 OP: MUL_OP B: 93  result: 0000
+# UVM_INFO monitor.sv(30) @ 225: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 60 OP: MUL_OP B: 93  result: 3720
+# UVM_ERROR scoreboard.sv(30) @ 225: uvm_test_top.My env.scb [SCB] SAI ROI! A: 96, B: -109, Op: MUL_OP. DUT ra: 14112, Dung la: -10464
+# UVM_INFO random_sequence.sv(28) @ 225: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 60 OP: MUL_OP B: 93  result: 3720
+# UVM_INFO driver.sv(34) @ 225: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: a0 OP: AND_OP B: 1c  result: 0000
+# UVM_INFO monitor.sv(30) @ 255: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: a0 OP: AND_OP B: 1c  result: 0000
+# UVM_INFO scoreboard.sv(34) @ 255: uvm_test_top.My env.scb [SCB] DUNG: A: a0 OP: AND_OP B: 1c  result: 0000
+# UVM_INFO random_sequence.sv(28) @ 255: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: a0 OP: AND_OP B: 1c  result: 0000
+# UVM_INFO driver.sv(34) @ 255: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: a9 OP: XOR_OP B: 68  result: 0000
+# UVM_INFO monitor.sv(30) @ 285: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: a9 OP: XOR_OP B: 68  result: 00c1
+# UVM_ERROR scoreboard.sv(30) @ 285: uvm_test_top.My env.scb [SCB] SAI ROI! A: -87, B: 104, Op: XOR_OP. DUT ra: 193, Dung la: -63
+# UVM_INFO random_sequence.sv(28) @ 285: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: a9 OP: XOR_OP B: 68  result: 00c1
+# UVM_INFO driver.sv(34) @ 285: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 95 OP: ADD_OP B: 69  result: 0000
+# UVM_INFO monitor.sv(30) @ 315: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 95 OP: ADD_OP B: 69  result: 00fe
+# UVM_ERROR scoreboard.sv(30) @ 315: uvm_test_top.My env.scb [SCB] SAI ROI! A: -107, B: 105, Op: ADD_OP. DUT ra: 254, Dung la: -2
+# UVM_INFO random_sequence.sv(28) @ 315: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 95 OP: ADD_OP B: 69  result: 00fe
+# UVM_INFO driver.sv(34) @ 315: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 9a OP: ADD_OP B: 19  result: 0000
+# UVM_INFO monitor.sv(30) @ 345: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 9a OP: ADD_OP B: 19  result: 00b3
+# UVM_ERROR scoreboard.sv(30) @ 345: uvm_test_top.My env.scb [SCB] SAI ROI! A: -102, B: 25, Op: ADD_OP. DUT ra: 179, Dung la: -77
+# UVM_INFO random_sequence.sv(28) @ 345: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 9a OP: ADD_OP B: 19  result: 00b3
+# UVM_INFO driver.sv(34) @ 345: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 1b OP: MUL_OP B: af  result: 0000
+# UVM_INFO monitor.sv(30) @ 375: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 1b OP: MUL_OP B: af  result: 1275
+# UVM_ERROR scoreboard.sv(30) @ 375: uvm_test_top.My env.scb [SCB] SAI ROI! A: 27, B: -81, Op: MUL_OP. DUT ra: 4725, Dung la: -2187
+# UVM_INFO random_sequence.sv(28) @ 375: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 1b OP: MUL_OP B: af  result: 1275
+# UVM_INFO driver.sv(34) @ 375: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 75 OP: MUL_OP B: 00  result: 0000
+# UVM_INFO monitor.sv(30) @ 405: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 75 OP: MUL_OP B: 00  result: 0000
+# UVM_INFO scoreboard.sv(34) @ 405: uvm_test_top.My env.scb [SCB] DUNG: A: 75 OP: MUL_OP B: 00  result: 0000
+# UVM_INFO random_sequence.sv(28) @ 405: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 75 OP: MUL_OP B: 00  result: 0000
+# UVM_INFO driver.sv(34) @ 405: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 1f OP: AND_OP B: 16  result: 0000
+# UVM_INFO monitor.sv(30) @ 435: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 1f OP: AND_OP B: 16  result: 0016
+# UVM_INFO scoreboard.sv(34) @ 435: uvm_test_top.My env.scb [SCB] DUNG: A: 1f OP: AND_OP B: 16  result: 0016
+# UVM_INFO random_sequence.sv(28) @ 435: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 1f OP: AND_OP B: 16  result: 0016
+# UVM_INFO driver.sv(34) @ 435: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: b7 OP: XOR_OP B: 2f  result: 0000
+# UVM_INFO monitor.sv(30) @ 465: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: b7 OP: XOR_OP B: 2f  result: 0098
+# UVM_ERROR scoreboard.sv(30) @ 465: uvm_test_top.My env.scb [SCB] SAI ROI! A: -73, B: 47, Op: XOR_OP. DUT ra: 152, Dung la: -104
+# UVM_INFO random_sequence.sv(28) @ 465: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: b7 OP: XOR_OP B: 2f  result: 0098
+# UVM_INFO driver.sv(34) @ 465: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 33 OP: AND_OP B: 48  result: 0000
+# UVM_INFO monitor.sv(30) @ 495: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 33 OP: AND_OP B: 48  result: 0000
+# UVM_INFO scoreboard.sv(34) @ 495: uvm_test_top.My env.scb [SCB] DUNG: A: 33 OP: AND_OP B: 48  result: 0000
+# UVM_INFO random_sequence.sv(28) @ 495: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 33 OP: AND_OP B: 48  result: 0000
+# UVM_INFO driver.sv(34) @ 495: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: d1 OP: MUL_OP B: 5c  result: 0000
+# UVM_INFO monitor.sv(30) @ 525: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: d1 OP: MUL_OP B: 5c  result: 4b1c
+# UVM_ERROR scoreboard.sv(30) @ 525: uvm_test_top.My env.scb [SCB] SAI ROI! A: -47, B: 92, Op: MUL_OP. DUT ra: 19228, Dung la: -4324
+# UVM_INFO random_sequence.sv(28) @ 525: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: d1 OP: MUL_OP B: 5c  result: 4b1c
+# UVM_INFO driver.sv(34) @ 525: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 08 OP: XOR_OP B: 8a  result: 0000
+# UVM_INFO monitor.sv(30) @ 555: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 08 OP: XOR_OP B: 8a  result: 0082
+# UVM_ERROR scoreboard.sv(30) @ 555: uvm_test_top.My env.scb [SCB] SAI ROI! A: 8, B: -118, Op: XOR_OP. DUT ra: 130, Dung la: -126
+# UVM_INFO random_sequence.sv(28) @ 555: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 08 OP: XOR_OP B: 8a  result: 0082
+# UVM_INFO driver.sv(34) @ 555: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: a7 OP: AND_OP B: ed  result: 0000
+# UVM_INFO monitor.sv(30) @ 585: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: a7 OP: AND_OP B: ed  result: 00a5
+# UVM_ERROR scoreboard.sv(30) @ 585: uvm_test_top.My env.scb [SCB] SAI ROI! A: -89, B: -19, Op: AND_OP. DUT ra: 165, Dung la: -91
+# UVM_INFO random_sequence.sv(28) @ 585: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: a7 OP: AND_OP B: ed  result: 00a5
+# UVM_INFO driver.sv(34) @ 585: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 86 OP: ADD_OP B: ae  result: 0000
+# UVM_INFO monitor.sv(30) @ 615: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 86 OP: ADD_OP B: ae  result: 0134
+# UVM_ERROR scoreboard.sv(30) @ 615: uvm_test_top.My env.scb [SCB] SAI ROI! A: -122, B: -82, Op: ADD_OP. DUT ra: 308, Dung la: -204
+# UVM_INFO random_sequence.sv(28) @ 615: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 86 OP: ADD_OP B: ae  result: 0134
+# UVM_INFO driver.sv(34) @ 615: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: af OP: ADD_OP B: 87  result: 0000
+# UVM_INFO monitor.sv(30) @ 645: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: af OP: ADD_OP B: 87  result: 0136
+# UVM_ERROR scoreboard.sv(30) @ 645: uvm_test_top.My env.scb [SCB] SAI ROI! A: -81, B: -121, Op: ADD_OP. DUT ra: 310, Dung la: -202
+# UVM_INFO random_sequence.sv(28) @ 645: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: af OP: ADD_OP B: 87  result: 0136
+# UVM_INFO driver.sv(34) @ 645: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: cf OP: ADD_OP B: c4  result: 0000
+# UVM_INFO monitor.sv(30) @ 675: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: cf OP: ADD_OP B: c4  result: 0193
+# UVM_ERROR scoreboard.sv(30) @ 675: uvm_test_top.My env.scb [SCB] SAI ROI! A: -49, B: -60, Op: ADD_OP. DUT ra: 403, Dung la: -109
+# UVM_INFO random_sequence.sv(28) @ 675: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: cf OP: ADD_OP B: c4  result: 0193
+# UVM_INFO driver.sv(34) @ 675: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 49 OP: MUL_OP B: 69  result: 0000
+# UVM_INFO monitor.sv(30) @ 705: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 49 OP: MUL_OP B: 69  result: 1df1
+# UVM_INFO scoreboard.sv(34) @ 705: uvm_test_top.My env.scb [SCB] DUNG: A: 49 OP: MUL_OP B: 69  result: 1df1
+# UVM_INFO random_sequence.sv(28) @ 705: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 49 OP: MUL_OP B: 69  result: 1df1
+# UVM_INFO driver.sv(34) @ 705: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 72 OP: XOR_OP B: 29  result: 0000
+# UVM_INFO monitor.sv(30) @ 735: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 72 OP: XOR_OP B: 29  result: 005b
+# UVM_INFO scoreboard.sv(34) @ 735: uvm_test_top.My env.scb [SCB] DUNG: A: 72 OP: XOR_OP B: 29  result: 005b
+# UVM_INFO random_sequence.sv(28) @ 735: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 72 OP: XOR_OP B: 29  result: 005b
+# UVM_INFO driver.sv(34) @ 735: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 0a OP: MUL_OP B: 9a  result: 0000
+# UVM_INFO monitor.sv(30) @ 765: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 0a OP: MUL_OP B: 9a  result: 0604
+# UVM_ERROR scoreboard.sv(30) @ 765: uvm_test_top.My env.scb [SCB] SAI ROI! A: 10, B: -102, Op: MUL_OP. DUT ra: 1540, Dung la: -1020
+# UVM_INFO random_sequence.sv(28) @ 765: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 0a OP: MUL_OP B: 9a  result: 0604
+# UVM_INFO driver.sv(34) @ 765: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: b5 OP: XOR_OP B: 94  result: 0000
+# UVM_INFO monitor.sv(30) @ 795: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: b5 OP: XOR_OP B: 94  result: 0021
+# UVM_INFO scoreboard.sv(34) @ 795: uvm_test_top.My env.scb [SCB] DUNG: A: b5 OP: XOR_OP B: 94  result: 0021
+# UVM_INFO random_sequence.sv(28) @ 795: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: b5 OP: XOR_OP B: 94  result: 0021
+# UVM_INFO driver.sv(34) @ 795: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: c4 OP: XOR_OP B: 91  result: 0000
+# UVM_INFO monitor.sv(30) @ 825: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: c4 OP: XOR_OP B: 91  result: 0055
+# UVM_INFO scoreboard.sv(34) @ 825: uvm_test_top.My env.scb [SCB] DUNG: A: c4 OP: XOR_OP B: 91  result: 0055
+# UVM_INFO random_sequence.sv(28) @ 825: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: c4 OP: XOR_OP B: 91  result: 0055
+# UVM_INFO driver.sv(34) @ 825: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 55 OP: ADD_OP B: ed  result: 0000
+# UVM_INFO monitor.sv(30) @ 855: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 55 OP: ADD_OP B: ed  result: 0142
+# UVM_ERROR scoreboard.sv(30) @ 855: uvm_test_top.My env.scb [SCB] SAI ROI! A: 85, B: -19, Op: ADD_OP. DUT ra: 322, Dung la: 66
+# UVM_INFO random_sequence.sv(28) @ 855: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 55 OP: ADD_OP B: ed  result: 0142
+# UVM_INFO driver.sv(34) @ 855: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 09 OP: XOR_OP B: 6f  result: 0000
+# UVM_INFO monitor.sv(30) @ 885: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 09 OP: XOR_OP B: 6f  result: 0066
+# UVM_INFO scoreboard.sv(34) @ 885: uvm_test_top.My env.scb [SCB] DUNG: A: 09 OP: XOR_OP B: 6f  result: 0066
+# UVM_INFO random_sequence.sv(28) @ 885: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 09 OP: XOR_OP B: 6f  result: 0066
+# UVM_INFO driver.sv(34) @ 885: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 86 OP: MUL_OP B: 30  result: 0000
+# UVM_INFO monitor.sv(30) @ 915: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 86 OP: MUL_OP B: 30  result: 1920
+# UVM_ERROR scoreboard.sv(30) @ 915: uvm_test_top.My env.scb [SCB] SAI ROI! A: -122, B: 48, Op: MUL_OP. DUT ra: 6432, Dung la: -5856
+# UVM_INFO random_sequence.sv(28) @ 915: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 86 OP: MUL_OP B: 30  result: 1920
+# UVM_INFO driver.sv(34) @ 915: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 96 OP: AND_OP B: c9  result: 0000
+# UVM_INFO monitor.sv(30) @ 945: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 96 OP: AND_OP B: c9  result: 0080
+# UVM_ERROR scoreboard.sv(30) @ 945: uvm_test_top.My env.scb [SCB] SAI ROI! A: -106, B: -55, Op: AND_OP. DUT ra: 128, Dung la: -128
+# UVM_INFO random_sequence.sv(28) @ 945: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 96 OP: AND_OP B: c9  result: 0080
+# UVM_INFO driver.sv(34) @ 945: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 56 OP: AND_OP B: 74  result: 0000
+# UVM_INFO monitor.sv(30) @ 975: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 56 OP: AND_OP B: 74  result: 0054
+# UVM_INFO scoreboard.sv(34) @ 975: uvm_test_top.My env.scb [SCB] DUNG: A: 56 OP: AND_OP B: 74  result: 0054
+# UVM_INFO random_sequence.sv(28) @ 975: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 56 OP: AND_OP B: 74  result: 0054
+# UVM_INFO driver.sv(34) @ 975: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 8d OP: ADD_OP B: 7a  result: 0000
+# UVM_INFO monitor.sv(30) @ 1005: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 8d OP: ADD_OP B: 7a  result: 0107
+# UVM_ERROR scoreboard.sv(30) @ 1005: uvm_test_top.My env.scb [SCB] SAI ROI! A: -115, B: 122, Op: ADD_OP. DUT ra: 263, Dung la: 7
+# UVM_INFO random_sequence.sv(28) @ 1005: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 8d OP: ADD_OP B: 7a  result: 0107
+# UVM_INFO driver.sv(34) @ 1005: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 30 OP: ADD_OP B: 7e  result: 0000
+# UVM_INFO monitor.sv(30) @ 1035: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 30 OP: ADD_OP B: 7e  result: 00ae
+# UVM_INFO scoreboard.sv(34) @ 1035: uvm_test_top.My env.scb [SCB] DUNG: A: 30 OP: ADD_OP B: 7e  result: 00ae
+# UVM_INFO random_sequence.sv(28) @ 1035: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 30 OP: ADD_OP B: 7e  result: 00ae
+# UVM_INFO driver.sv(34) @ 1035: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: be OP: ADD_OP B: 10  result: 0000
+# UVM_INFO monitor.sv(30) @ 1065: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: be OP: ADD_OP B: 10  result: 00ce
+# UVM_ERROR scoreboard.sv(30) @ 1065: uvm_test_top.My env.scb [SCB] SAI ROI! A: -66, B: 16, Op: ADD_OP. DUT ra: 206, Dung la: -50
+# UVM_INFO random_sequence.sv(28) @ 1065: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: be OP: ADD_OP B: 10  result: 00ce
+# UVM_INFO driver.sv(34) @ 1065: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: fa OP: ADD_OP B: db  result: 0000
+# UVM_INFO monitor.sv(30) @ 1095: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: fa OP: ADD_OP B: db  result: 01d5
+# UVM_ERROR scoreboard.sv(30) @ 1095: uvm_test_top.My env.scb [SCB] SAI ROI! A: -6, B: -37, Op: ADD_OP. DUT ra: 469, Dung la: -43
+# UVM_INFO random_sequence.sv(28) @ 1095: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: fa OP: ADD_OP B: db  result: 01d5
+# UVM_INFO driver.sv(34) @ 1095: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 93 OP: AND_OP B: 0f  result: 0000
+# UVM_INFO monitor.sv(30) @ 1125: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 93 OP: AND_OP B: 0f  result: 0003
+# UVM_INFO scoreboard.sv(34) @ 1125: uvm_test_top.My env.scb [SCB] DUNG: A: 93 OP: AND_OP B: 0f  result: 0003
+# UVM_INFO random_sequence.sv(28) @ 1125: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 93 OP: AND_OP B: 0f  result: 0003
+# UVM_INFO driver.sv(34) @ 1125: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 89 OP: ADD_OP B: b7  result: 0000
+# UVM_INFO monitor.sv(30) @ 1155: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 89 OP: ADD_OP B: b7  result: 0140
+# UVM_ERROR scoreboard.sv(30) @ 1155: uvm_test_top.My env.scb [SCB] SAI ROI! A: -119, B: -73, Op: ADD_OP. DUT ra: 320, Dung la: -192
+# UVM_INFO random_sequence.sv(28) @ 1155: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 89 OP: ADD_OP B: b7  result: 0140
+# UVM_INFO driver.sv(34) @ 1155: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: b3 OP: ADD_OP B: 2e  result: 0000
+# UVM_INFO monitor.sv(30) @ 1185: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: b3 OP: ADD_OP B: 2e  result: 00e1
+# UVM_ERROR scoreboard.sv(30) @ 1185: uvm_test_top.My env.scb [SCB] SAI ROI! A: -77, B: 46, Op: ADD_OP. DUT ra: 225, Dung la: -31
+# UVM_INFO random_sequence.sv(28) @ 1185: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: b3 OP: ADD_OP B: 2e  result: 00e1
+# UVM_INFO driver.sv(34) @ 1185: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ca OP: ADD_OP B: 22  result: 0000
+# UVM_INFO monitor.sv(30) @ 1215: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ca OP: ADD_OP B: 22  result: 00ec
+# UVM_ERROR scoreboard.sv(30) @ 1215: uvm_test_top.My env.scb [SCB] SAI ROI! A: -54, B: 34, Op: ADD_OP. DUT ra: 236, Dung la: -20
+# UVM_INFO random_sequence.sv(28) @ 1215: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: ca OP: ADD_OP B: 22  result: 00ec
+# UVM_INFO driver.sv(34) @ 1215: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 68 OP: AND_OP B: 62  result: 0000
+# UVM_INFO monitor.sv(30) @ 1245: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 68 OP: AND_OP B: 62  result: 0060
+# UVM_INFO scoreboard.sv(34) @ 1245: uvm_test_top.My env.scb [SCB] DUNG: A: 68 OP: AND_OP B: 62  result: 0060
+# UVM_INFO random_sequence.sv(28) @ 1245: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 68 OP: AND_OP B: 62  result: 0060
+# UVM_INFO driver.sv(34) @ 1245: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ac OP: ADD_OP B: 19  result: 0000
+# UVM_INFO monitor.sv(30) @ 1275: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ac OP: ADD_OP B: 19  result: 00c5
+# UVM_ERROR scoreboard.sv(30) @ 1275: uvm_test_top.My env.scb [SCB] SAI ROI! A: -84, B: 25, Op: ADD_OP. DUT ra: 197, Dung la: -59
+# UVM_INFO random_sequence.sv(28) @ 1275: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: ac OP: ADD_OP B: 19  result: 00c5
+# UVM_INFO driver.sv(34) @ 1275: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 98 OP: XOR_OP B: d3  result: 0000
+# UVM_INFO monitor.sv(30) @ 1305: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 98 OP: XOR_OP B: d3  result: 004b
+# UVM_INFO scoreboard.sv(34) @ 1305: uvm_test_top.My env.scb [SCB] DUNG: A: 98 OP: XOR_OP B: d3  result: 004b
+# UVM_INFO random_sequence.sv(28) @ 1305: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 98 OP: XOR_OP B: d3  result: 004b
+# UVM_INFO driver.sv(34) @ 1305: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: f8 OP: AND_OP B: de  result: 0000
+# UVM_INFO monitor.sv(30) @ 1335: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: f8 OP: AND_OP B: de  result: 00d8
+# UVM_ERROR scoreboard.sv(30) @ 1335: uvm_test_top.My env.scb [SCB] SAI ROI! A: -8, B: -34, Op: AND_OP. DUT ra: 216, Dung la: -40
+# UVM_INFO random_sequence.sv(28) @ 1335: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: f8 OP: AND_OP B: de  result: 00d8
+# UVM_INFO driver.sv(34) @ 1335: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 44 OP: ADD_OP B: 22  result: 0000
+# UVM_INFO monitor.sv(30) @ 1365: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 44 OP: ADD_OP B: 22  result: 0066
+# UVM_INFO scoreboard.sv(34) @ 1365: uvm_test_top.My env.scb [SCB] DUNG: A: 44 OP: ADD_OP B: 22  result: 0066
+# UVM_INFO random_sequence.sv(28) @ 1365: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 44 OP: ADD_OP B: 22  result: 0066
+# UVM_INFO driver.sv(34) @ 1365: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: d6 OP: MUL_OP B: 3c  result: 0000
+# UVM_INFO monitor.sv(30) @ 1395: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: d6 OP: MUL_OP B: 3c  result: 3228
+# UVM_ERROR scoreboard.sv(30) @ 1395: uvm_test_top.My env.scb [SCB] SAI ROI! A: -42, B: 60, Op: MUL_OP. DUT ra: 12840, Dung la: -2520
+# UVM_INFO random_sequence.sv(28) @ 1395: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: d6 OP: MUL_OP B: 3c  result: 3228
+# UVM_INFO driver.sv(34) @ 1395: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 76 OP: XOR_OP B: b3  result: 0000
+# UVM_INFO monitor.sv(30) @ 1425: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 76 OP: XOR_OP B: b3  result: 00c5
+# UVM_ERROR scoreboard.sv(30) @ 1425: uvm_test_top.My env.scb [SCB] SAI ROI! A: 118, B: -77, Op: XOR_OP. DUT ra: 197, Dung la: -59
+# UVM_INFO random_sequence.sv(28) @ 1425: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 76 OP: XOR_OP B: b3  result: 00c5
+# UVM_INFO driver.sv(34) @ 1425: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 56 OP: XOR_OP B: 03  result: 0000
+# UVM_INFO monitor.sv(30) @ 1455: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 56 OP: XOR_OP B: 03  result: 0055
+# UVM_INFO scoreboard.sv(34) @ 1455: uvm_test_top.My env.scb [SCB] DUNG: A: 56 OP: XOR_OP B: 03  result: 0055
+# UVM_INFO random_sequence.sv(28) @ 1455: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 56 OP: XOR_OP B: 03  result: 0055
+# UVM_INFO driver.sv(34) @ 1455: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 4e OP: XOR_OP B: 89  result: 0000
+# UVM_INFO monitor.sv(30) @ 1485: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 4e OP: XOR_OP B: 89  result: 00c7
+# UVM_ERROR scoreboard.sv(30) @ 1485: uvm_test_top.My env.scb [SCB] SAI ROI! A: 78, B: -119, Op: XOR_OP. DUT ra: 199, Dung la: -57
+# UVM_INFO random_sequence.sv(28) @ 1485: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 4e OP: XOR_OP B: 89  result: 00c7
+# UVM_INFO driver.sv(34) @ 1485: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 0a OP: XOR_OP B: 37  result: 0000
+# UVM_INFO monitor.sv(30) @ 1515: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 0a OP: XOR_OP B: 37  result: 003d
+# UVM_INFO scoreboard.sv(34) @ 1515: uvm_test_top.My env.scb [SCB] DUNG: A: 0a OP: XOR_OP B: 37  result: 003d
+# UVM_INFO random_sequence.sv(28) @ 1515: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 0a OP: XOR_OP B: 37  result: 003d
+# UVM_INFO driver.sv(34) @ 1515: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 44 OP: XOR_OP B: bd  result: 0000
+# UVM_INFO monitor.sv(30) @ 1545: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 44 OP: XOR_OP B: bd  result: 00f9
+# UVM_ERROR scoreboard.sv(30) @ 1545: uvm_test_top.My env.scb [SCB] SAI ROI! A: 68, B: -67, Op: XOR_OP. DUT ra: 249, Dung la: -7
+# UVM_INFO random_sequence.sv(28) @ 1545: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 44 OP: XOR_OP B: bd  result: 00f9
+# UVM_INFO driver.sv(34) @ 1545: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 3d OP: XOR_OP B: db  result: 0000
+# UVM_INFO monitor.sv(30) @ 1575: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 3d OP: XOR_OP B: db  result: 00e6
+# UVM_ERROR scoreboard.sv(30) @ 1575: uvm_test_top.My env.scb [SCB] SAI ROI! A: 61, B: -37, Op: XOR_OP. DUT ra: 230, Dung la: -26
+# UVM_INFO random_sequence.sv(28) @ 1575: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 3d OP: XOR_OP B: db  result: 00e6
+# UVM_INFO driver.sv(34) @ 1575: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 54 OP: AND_OP B: e8  result: 0000
+# UVM_INFO monitor.sv(30) @ 1605: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 54 OP: AND_OP B: e8  result: 0040
+# UVM_INFO scoreboard.sv(34) @ 1605: uvm_test_top.My env.scb [SCB] DUNG: A: 54 OP: AND_OP B: e8  result: 0040
+# UVM_INFO random_sequence.sv(28) @ 1605: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 54 OP: AND_OP B: e8  result: 0040
+# UVM_INFO driver.sv(34) @ 1605: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 2a OP: AND_OP B: 00  result: 0000
+# UVM_INFO monitor.sv(30) @ 1635: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 2a OP: AND_OP B: 00  result: 0000
+# UVM_INFO scoreboard.sv(34) @ 1635: uvm_test_top.My env.scb [SCB] DUNG: A: 2a OP: AND_OP B: 00  result: 0000
+# UVM_INFO random_sequence.sv(28) @ 1635: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 2a OP: AND_OP B: 00  result: 0000
+# UVM_INFO driver.sv(34) @ 1635: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 9d OP: ADD_OP B: 3a  result: 0000
+# UVM_INFO monitor.sv(30) @ 1665: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 9d OP: ADD_OP B: 3a  result: 00d7
+# UVM_ERROR scoreboard.sv(30) @ 1665: uvm_test_top.My env.scb [SCB] SAI ROI! A: -99, B: 58, Op: ADD_OP. DUT ra: 215, Dung la: -41
+# UVM_INFO random_sequence.sv(28) @ 1665: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 9d OP: ADD_OP B: 3a  result: 00d7
+# UVM_INFO driver.sv(34) @ 1665: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 1e OP: XOR_OP B: 71  result: 0000
+# UVM_INFO monitor.sv(30) @ 1695: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 1e OP: XOR_OP B: 71  result: 006f
+# UVM_INFO scoreboard.sv(34) @ 1695: uvm_test_top.My env.scb [SCB] DUNG: A: 1e OP: XOR_OP B: 71  result: 006f
+# UVM_INFO random_sequence.sv(28) @ 1695: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 1e OP: XOR_OP B: 71  result: 006f
+# UVM_INFO driver.sv(34) @ 1695: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: b5 OP: ADD_OP B: 65  result: 0000
+# UVM_INFO monitor.sv(30) @ 1725: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: b5 OP: ADD_OP B: 65  result: 011a
+# UVM_ERROR scoreboard.sv(30) @ 1725: uvm_test_top.My env.scb [SCB] SAI ROI! A: -75, B: 101, Op: ADD_OP. DUT ra: 282, Dung la: 26
+# UVM_INFO random_sequence.sv(28) @ 1725: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: b5 OP: ADD_OP B: 65  result: 011a
+# UVM_INFO driver.sv(34) @ 1725: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 50 OP: MUL_OP B: 9b  result: 0000
+# UVM_INFO monitor.sv(30) @ 1755: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 50 OP: MUL_OP B: 9b  result: 3070
+# UVM_ERROR scoreboard.sv(30) @ 1755: uvm_test_top.My env.scb [SCB] SAI ROI! A: 80, B: -101, Op: MUL_OP. DUT ra: 12400, Dung la: -8080
+# UVM_INFO random_sequence.sv(28) @ 1755: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 50 OP: MUL_OP B: 9b  result: 3070
+# UVM_INFO driver.sv(34) @ 1755: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: dd OP: ADD_OP B: b2  result: 0000
+# UVM_INFO monitor.sv(30) @ 1785: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: dd OP: ADD_OP B: b2  result: 018f
+# UVM_ERROR scoreboard.sv(30) @ 1785: uvm_test_top.My env.scb [SCB] SAI ROI! A: -35, B: -78, Op: ADD_OP. DUT ra: 399, Dung la: -113
+# UVM_INFO random_sequence.sv(28) @ 1785: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: dd OP: ADD_OP B: b2  result: 018f
+# UVM_INFO driver.sv(34) @ 1785: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 45 OP: XOR_OP B: ea  result: 0000
+# UVM_INFO monitor.sv(30) @ 1815: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 45 OP: XOR_OP B: ea  result: 00af
+# UVM_ERROR scoreboard.sv(30) @ 1815: uvm_test_top.My env.scb [SCB] SAI ROI! A: 69, B: -22, Op: XOR_OP. DUT ra: 175, Dung la: -81
+# UVM_INFO random_sequence.sv(28) @ 1815: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 45 OP: XOR_OP B: ea  result: 00af
+# UVM_INFO driver.sv(34) @ 1815: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 0c OP: MUL_OP B: e1  result: 0000
+# UVM_INFO monitor.sv(30) @ 1845: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 0c OP: MUL_OP B: e1  result: 0a8c
+# UVM_ERROR scoreboard.sv(30) @ 1845: uvm_test_top.My env.scb [SCB] SAI ROI! A: 12, B: -31, Op: MUL_OP. DUT ra: 2700, Dung la: -372
+# UVM_INFO random_sequence.sv(28) @ 1845: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 0c OP: MUL_OP B: e1  result: 0a8c
+# UVM_INFO driver.sv(34) @ 1845: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ea OP: ADD_OP B: 11  result: 0000
+# UVM_INFO monitor.sv(30) @ 1875: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ea OP: ADD_OP B: 11  result: 00fb
+# UVM_ERROR scoreboard.sv(30) @ 1875: uvm_test_top.My env.scb [SCB] SAI ROI! A: -22, B: 17, Op: ADD_OP. DUT ra: 251, Dung la: -5
+# UVM_INFO random_sequence.sv(28) @ 1875: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: ea OP: ADD_OP B: 11  result: 00fb
+# UVM_INFO driver.sv(34) @ 1875: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 48 OP: MUL_OP B: 37  result: 0000
+# UVM_INFO monitor.sv(30) @ 1905: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 48 OP: MUL_OP B: 37  result: 0f78
+# UVM_INFO scoreboard.sv(34) @ 1905: uvm_test_top.My env.scb [SCB] DUNG: A: 48 OP: MUL_OP B: 37  result: 0f78
+# UVM_INFO random_sequence.sv(28) @ 1905: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 48 OP: MUL_OP B: 37  result: 0f78
+# UVM_INFO driver.sv(34) @ 1905: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: c8 OP: AND_OP B: 0b  result: 0000
+# UVM_INFO monitor.sv(30) @ 1935: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: c8 OP: AND_OP B: 0b  result: 0008
+# UVM_INFO scoreboard.sv(34) @ 1935: uvm_test_top.My env.scb [SCB] DUNG: A: c8 OP: AND_OP B: 0b  result: 0008
+# UVM_INFO random_sequence.sv(28) @ 1935: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: c8 OP: AND_OP B: 0b  result: 0008
+# UVM_INFO driver.sv(34) @ 1935: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 7d OP: XOR_OP B: 36  result: 0000
+# UVM_INFO monitor.sv(30) @ 1965: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 7d OP: XOR_OP B: 36  result: 004b
+# UVM_INFO scoreboard.sv(34) @ 1965: uvm_test_top.My env.scb [SCB] DUNG: A: 7d OP: XOR_OP B: 36  result: 004b
+# UVM_INFO random_sequence.sv(28) @ 1965: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 7d OP: XOR_OP B: 36  result: 004b
+# UVM_INFO driver.sv(34) @ 1965: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: b4 OP: ADD_OP B: 6c  result: 0000
+# UVM_INFO monitor.sv(30) @ 1995: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: b4 OP: ADD_OP B: 6c  result: 0120
+# UVM_ERROR scoreboard.sv(30) @ 1995: uvm_test_top.My env.scb [SCB] SAI ROI! A: -76, B: 108, Op: ADD_OP. DUT ra: 288, Dung la: 32
+# UVM_INFO random_sequence.sv(28) @ 1995: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: b4 OP: ADD_OP B: 6c  result: 0120
+# UVM_INFO driver.sv(34) @ 1995: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 69 OP: MUL_OP B: 46  result: 0000
+# UVM_INFO monitor.sv(30) @ 2025: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 69 OP: MUL_OP B: 46  result: 1cb6
+# UVM_INFO scoreboard.sv(34) @ 2025: uvm_test_top.My env.scb [SCB] DUNG: A: 69 OP: MUL_OP B: 46  result: 1cb6
+# UVM_INFO random_sequence.sv(28) @ 2025: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 69 OP: MUL_OP B: 46  result: 1cb6
+# UVM_INFO driver.sv(34) @ 2025: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: f7 OP: XOR_OP B: 11  result: 0000
+# UVM_INFO monitor.sv(30) @ 2055: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: f7 OP: XOR_OP B: 11  result: 00e6
+# UVM_ERROR scoreboard.sv(30) @ 2055: uvm_test_top.My env.scb [SCB] SAI ROI! A: -9, B: 17, Op: XOR_OP. DUT ra: 230, Dung la: -26
+# UVM_INFO random_sequence.sv(28) @ 2055: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: f7 OP: XOR_OP B: 11  result: 00e6
+# UVM_INFO driver.sv(34) @ 2055: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: aa OP: MUL_OP B: 1c  result: 0000
+# UVM_INFO monitor.sv(30) @ 2085: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: aa OP: MUL_OP B: 1c  result: 1298
+# UVM_ERROR scoreboard.sv(30) @ 2085: uvm_test_top.My env.scb [SCB] SAI ROI! A: -86, B: 28, Op: MUL_OP. DUT ra: 4760, Dung la: -2408
+# UVM_INFO random_sequence.sv(28) @ 2085: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: aa OP: MUL_OP B: 1c  result: 1298
+# UVM_INFO driver.sv(34) @ 2085: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 57 OP: ADD_OP B: b6  result: 0000
+# UVM_INFO monitor.sv(30) @ 2115: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 57 OP: ADD_OP B: b6  result: 010d
+# UVM_ERROR scoreboard.sv(30) @ 2115: uvm_test_top.My env.scb [SCB] SAI ROI! A: 87, B: -74, Op: ADD_OP. DUT ra: 269, Dung la: 13
+# UVM_INFO random_sequence.sv(28) @ 2115: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 57 OP: ADD_OP B: b6  result: 010d
+# UVM_INFO driver.sv(34) @ 2115: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 60 OP: MUL_OP B: 7e  result: 0000
+# UVM_INFO monitor.sv(30) @ 2145: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 60 OP: MUL_OP B: 7e  result: 2f40
+# UVM_INFO scoreboard.sv(34) @ 2145: uvm_test_top.My env.scb [SCB] DUNG: A: 60 OP: MUL_OP B: 7e  result: 2f40
+# UVM_INFO random_sequence.sv(28) @ 2145: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 60 OP: MUL_OP B: 7e  result: 2f40
+# UVM_INFO driver.sv(34) @ 2145: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: c3 OP: ADD_OP B: 0f  result: 0000
+# UVM_INFO monitor.sv(30) @ 2175: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: c3 OP: ADD_OP B: 0f  result: 00d2
+# UVM_ERROR scoreboard.sv(30) @ 2175: uvm_test_top.My env.scb [SCB] SAI ROI! A: -61, B: 15, Op: ADD_OP. DUT ra: 210, Dung la: -46
+# UVM_INFO random_sequence.sv(28) @ 2175: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: c3 OP: ADD_OP B: 0f  result: 00d2
+# UVM_INFO driver.sv(34) @ 2175: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: fa OP: XOR_OP B: dc  result: 0000
+# UVM_INFO monitor.sv(30) @ 2205: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: fa OP: XOR_OP B: dc  result: 0026
+# UVM_INFO scoreboard.sv(34) @ 2205: uvm_test_top.My env.scb [SCB] DUNG: A: fa OP: XOR_OP B: dc  result: 0026
+# UVM_INFO random_sequence.sv(28) @ 2205: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: fa OP: XOR_OP B: dc  result: 0026
+# UVM_INFO driver.sv(34) @ 2205: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 2b OP: ADD_OP B: 04  result: 0000
+# UVM_INFO monitor.sv(30) @ 2235: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 2b OP: ADD_OP B: 04  result: 002f
+# UVM_INFO scoreboard.sv(34) @ 2235: uvm_test_top.My env.scb [SCB] DUNG: A: 2b OP: ADD_OP B: 04  result: 002f
+# UVM_INFO random_sequence.sv(28) @ 2235: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 2b OP: ADD_OP B: 04  result: 002f
+# UVM_INFO driver.sv(34) @ 2235: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 37 OP: ADD_OP B: 4d  result: 0000
+# UVM_INFO monitor.sv(30) @ 2265: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 37 OP: ADD_OP B: 4d  result: 0084
+# UVM_INFO scoreboard.sv(34) @ 2265: uvm_test_top.My env.scb [SCB] DUNG: A: 37 OP: ADD_OP B: 4d  result: 0084
+# UVM_INFO random_sequence.sv(28) @ 2265: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 37 OP: ADD_OP B: 4d  result: 0084
+# UVM_INFO driver.sv(34) @ 2265: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 26 OP: MUL_OP B: 18  result: 0000
+# UVM_INFO monitor.sv(30) @ 2295: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 26 OP: MUL_OP B: 18  result: 0390
+# UVM_INFO scoreboard.sv(34) @ 2295: uvm_test_top.My env.scb [SCB] DUNG: A: 26 OP: MUL_OP B: 18  result: 0390
+# UVM_INFO random_sequence.sv(28) @ 2295: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 26 OP: MUL_OP B: 18  result: 0390
+# UVM_INFO driver.sv(34) @ 2295: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: f3 OP: MUL_OP B: c1  result: 0000
+# UVM_INFO monitor.sv(30) @ 2325: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: f3 OP: MUL_OP B: c1  result: b733
+# UVM_ERROR scoreboard.sv(30) @ 2325: uvm_test_top.My env.scb [SCB] SAI ROI! A: -13, B: -63, Op: MUL_OP. DUT ra: -18637, Dung la: 819
+# UVM_INFO random_sequence.sv(28) @ 2325: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: f3 OP: MUL_OP B: c1  result: b733
+# UVM_INFO driver.sv(34) @ 2325: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 23 OP: ADD_OP B: 5a  result: 0000
+# UVM_INFO monitor.sv(30) @ 2355: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 23 OP: ADD_OP B: 5a  result: 007d
+# UVM_INFO scoreboard.sv(34) @ 2355: uvm_test_top.My env.scb [SCB] DUNG: A: 23 OP: ADD_OP B: 5a  result: 007d
+# UVM_INFO random_sequence.sv(28) @ 2355: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 23 OP: ADD_OP B: 5a  result: 007d
+# UVM_INFO driver.sv(34) @ 2355: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: b4 OP: XOR_OP B: 94  result: 0000
+# UVM_INFO monitor.sv(30) @ 2385: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: b4 OP: XOR_OP B: 94  result: 0020
+# UVM_INFO scoreboard.sv(34) @ 2385: uvm_test_top.My env.scb [SCB] DUNG: A: b4 OP: XOR_OP B: 94  result: 0020
+# UVM_INFO random_sequence.sv(28) @ 2385: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: b4 OP: XOR_OP B: 94  result: 0020
+# UVM_INFO driver.sv(34) @ 2385: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 10 OP: AND_OP B: 4c  result: 0000
+# UVM_INFO monitor.sv(30) @ 2415: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 10 OP: AND_OP B: 4c  result: 0000
+# UVM_INFO scoreboard.sv(34) @ 2415: uvm_test_top.My env.scb [SCB] DUNG: A: 10 OP: AND_OP B: 4c  result: 0000
+# UVM_INFO random_sequence.sv(28) @ 2415: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 10 OP: AND_OP B: 4c  result: 0000
+# UVM_INFO driver.sv(34) @ 2415: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 6c OP: MUL_OP B: 3c  result: 0000
+# UVM_INFO monitor.sv(30) @ 2445: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 6c OP: MUL_OP B: 3c  result: 1950
+# UVM_INFO scoreboard.sv(34) @ 2445: uvm_test_top.My env.scb [SCB] DUNG: A: 6c OP: MUL_OP B: 3c  result: 1950
+# UVM_INFO random_sequence.sv(28) @ 2445: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 6c OP: MUL_OP B: 3c  result: 1950
+# UVM_INFO driver.sv(34) @ 2445: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ad OP: XOR_OP B: 53  result: 0000
+# UVM_INFO monitor.sv(30) @ 2475: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ad OP: XOR_OP B: 53  result: 00fe
+# UVM_ERROR scoreboard.sv(30) @ 2475: uvm_test_top.My env.scb [SCB] SAI ROI! A: -83, B: 83, Op: XOR_OP. DUT ra: 254, Dung la: -2
+# UVM_INFO random_sequence.sv(28) @ 2475: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: ad OP: XOR_OP B: 53  result: 00fe
+# UVM_INFO driver.sv(34) @ 2475: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 92 OP: MUL_OP B: 6a  result: 0000
+# UVM_INFO monitor.sv(30) @ 2505: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 92 OP: MUL_OP B: 6a  result: 3c74
+# UVM_ERROR scoreboard.sv(30) @ 2505: uvm_test_top.My env.scb [SCB] SAI ROI! A: -110, B: 106, Op: MUL_OP. DUT ra: 15476, Dung la: -11660
+# UVM_INFO random_sequence.sv(28) @ 2505: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 92 OP: MUL_OP B: 6a  result: 3c74
+# UVM_INFO driver.sv(34) @ 2505: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: fe OP: MUL_OP B: c5  result: 0000
+# UVM_INFO monitor.sv(30) @ 2535: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: fe OP: MUL_OP B: c5  result: c376
+# UVM_ERROR scoreboard.sv(30) @ 2535: uvm_test_top.My env.scb [SCB] SAI ROI! A: -2, B: -59, Op: MUL_OP. DUT ra: -15498, Dung la: 118
+# UVM_INFO random_sequence.sv(28) @ 2535: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: fe OP: MUL_OP B: c5  result: c376
+# UVM_INFO driver.sv(34) @ 2535: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 23 OP: XOR_OP B: 86  result: 0000
+# UVM_INFO monitor.sv(30) @ 2565: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 23 OP: XOR_OP B: 86  result: 00a5
+# UVM_ERROR scoreboard.sv(30) @ 2565: uvm_test_top.My env.scb [SCB] SAI ROI! A: 35, B: -122, Op: XOR_OP. DUT ra: 165, Dung la: -91
+# UVM_INFO random_sequence.sv(28) @ 2565: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 23 OP: XOR_OP B: 86  result: 00a5
+# UVM_INFO driver.sv(34) @ 2565: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ef OP: ADD_OP B: 10  result: 0000
+# UVM_INFO monitor.sv(30) @ 2595: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ef OP: ADD_OP B: 10  result: 00ff
+# UVM_ERROR scoreboard.sv(30) @ 2595: uvm_test_top.My env.scb [SCB] SAI ROI! A: -17, B: 16, Op: ADD_OP. DUT ra: 255, Dung la: -1
+# UVM_INFO random_sequence.sv(28) @ 2595: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: ef OP: ADD_OP B: 10  result: 00ff
+# UVM_INFO driver.sv(34) @ 2595: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 69 OP: MUL_OP B: a1  result: 0000
+# UVM_INFO monitor.sv(30) @ 2625: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 69 OP: MUL_OP B: a1  result: 4209
+# UVM_ERROR scoreboard.sv(30) @ 2625: uvm_test_top.My env.scb [SCB] SAI ROI! A: 105, B: -95, Op: MUL_OP. DUT ra: 16905, Dung la: -9975
+# UVM_INFO random_sequence.sv(28) @ 2625: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 69 OP: MUL_OP B: a1  result: 4209
+# UVM_INFO driver.sv(34) @ 2625: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: cf OP: AND_OP B: 2f  result: 0000
+# UVM_INFO monitor.sv(30) @ 2655: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: cf OP: AND_OP B: 2f  result: 000f
+# UVM_INFO scoreboard.sv(34) @ 2655: uvm_test_top.My env.scb [SCB] DUNG: A: cf OP: AND_OP B: 2f  result: 000f
+# UVM_INFO random_sequence.sv(28) @ 2655: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: cf OP: AND_OP B: 2f  result: 000f
+# UVM_INFO driver.sv(34) @ 2655: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ae OP: ADD_OP B: ab  result: 0000
+# UVM_INFO monitor.sv(30) @ 2685: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ae OP: ADD_OP B: ab  result: 0159
+# UVM_ERROR scoreboard.sv(30) @ 2685: uvm_test_top.My env.scb [SCB] SAI ROI! A: -82, B: -85, Op: ADD_OP. DUT ra: 345, Dung la: -167
+# UVM_INFO random_sequence.sv(28) @ 2685: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: ae OP: ADD_OP B: ab  result: 0159
+# UVM_INFO driver.sv(34) @ 2685: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 33 OP: MUL_OP B: c7  result: 0000
+# UVM_INFO monitor.sv(30) @ 2715: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 33 OP: MUL_OP B: c7  result: 27a5
+# UVM_ERROR scoreboard.sv(30) @ 2715: uvm_test_top.My env.scb [SCB] SAI ROI! A: 51, B: -57, Op: MUL_OP. DUT ra: 10149, Dung la: -2907
+# UVM_INFO random_sequence.sv(28) @ 2715: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 33 OP: MUL_OP B: c7  result: 27a5
+# UVM_INFO driver.sv(34) @ 2715: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 98 OP: XOR_OP B: f9  result: 0000
+# UVM_INFO monitor.sv(30) @ 2745: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 98 OP: XOR_OP B: f9  result: 0061
+# UVM_INFO scoreboard.sv(34) @ 2745: uvm_test_top.My env.scb [SCB] DUNG: A: 98 OP: XOR_OP B: f9  result: 0061
+# UVM_INFO random_sequence.sv(28) @ 2745: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 98 OP: XOR_OP B: f9  result: 0061
+# UVM_INFO driver.sv(34) @ 2745: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: f9 OP: MUL_OP B: ad  result: 0000
+# UVM_INFO monitor.sv(30) @ 2775: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: f9 OP: MUL_OP B: ad  result: a845
+# UVM_ERROR scoreboard.sv(30) @ 2775: uvm_test_top.My env.scb [SCB] SAI ROI! A: -7, B: -83, Op: MUL_OP. DUT ra: -22459, Dung la: 581
+# UVM_INFO random_sequence.sv(28) @ 2775: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: f9 OP: MUL_OP B: ad  result: a845
+# UVM_INFO driver.sv(34) @ 2775: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: e0 OP: XOR_OP B: 50  result: 0000
+# UVM_INFO monitor.sv(30) @ 2805: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: e0 OP: XOR_OP B: 50  result: 00b0
+# UVM_ERROR scoreboard.sv(30) @ 2805: uvm_test_top.My env.scb [SCB] SAI ROI! A: -32, B: 80, Op: XOR_OP. DUT ra: 176, Dung la: -80
+# UVM_INFO random_sequence.sv(28) @ 2805: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: e0 OP: XOR_OP B: 50  result: 00b0
+# UVM_INFO driver.sv(34) @ 2805: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 35 OP: XOR_OP B: c1  result: 0000
+# UVM_INFO monitor.sv(30) @ 2835: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 35 OP: XOR_OP B: c1  result: 00f4
+# UVM_ERROR scoreboard.sv(30) @ 2835: uvm_test_top.My env.scb [SCB] SAI ROI! A: 53, B: -63, Op: XOR_OP. DUT ra: 244, Dung la: -12
+# UVM_INFO random_sequence.sv(28) @ 2835: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 35 OP: XOR_OP B: c1  result: 00f4
+# UVM_INFO driver.sv(34) @ 2835: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 27 OP: MUL_OP B: 0f  result: 0000
+# UVM_INFO monitor.sv(30) @ 2865: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 27 OP: MUL_OP B: 0f  result: 0249
+# UVM_INFO scoreboard.sv(34) @ 2865: uvm_test_top.My env.scb [SCB] DUNG: A: 27 OP: MUL_OP B: 0f  result: 0249
+# UVM_INFO random_sequence.sv(28) @ 2865: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 27 OP: MUL_OP B: 0f  result: 0249
+# UVM_INFO driver.sv(34) @ 2865: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: e4 OP: ADD_OP B: 7a  result: 0000
+# UVM_INFO monitor.sv(30) @ 2895: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: e4 OP: ADD_OP B: 7a  result: 015e
+# UVM_ERROR scoreboard.sv(30) @ 2895: uvm_test_top.My env.scb [SCB] SAI ROI! A: -28, B: 122, Op: ADD_OP. DUT ra: 350, Dung la: 94
+# UVM_INFO random_sequence.sv(28) @ 2895: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: e4 OP: ADD_OP B: 7a  result: 015e
+# UVM_INFO driver.sv(34) @ 2895: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 9d OP: ADD_OP B: 69  result: 0000
+# UVM_INFO monitor.sv(30) @ 2925: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 9d OP: ADD_OP B: 69  result: 0106
+# UVM_ERROR scoreboard.sv(30) @ 2925: uvm_test_top.My env.scb [SCB] SAI ROI! A: -99, B: 105, Op: ADD_OP. DUT ra: 262, Dung la: 6
+# UVM_INFO random_sequence.sv(28) @ 2925: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 9d OP: ADD_OP B: 69  result: 0106
+# UVM_INFO driver.sv(34) @ 2925: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ee OP: AND_OP B: 9f  result: 0000
+# UVM_INFO monitor.sv(30) @ 2955: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ee OP: AND_OP B: 9f  result: 008e
+# UVM_ERROR scoreboard.sv(30) @ 2955: uvm_test_top.My env.scb [SCB] SAI ROI! A: -18, B: -97, Op: AND_OP. DUT ra: 142, Dung la: -114
+# UVM_INFO random_sequence.sv(28) @ 2955: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: ee OP: AND_OP B: 9f  result: 008e
+# UVM_INFO driver.sv(34) @ 2955: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ec OP: MUL_OP B: e7  result: 0000
+# UVM_INFO monitor.sv(30) @ 2985: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ec OP: MUL_OP B: e7  result: d4f4
+# UVM_ERROR scoreboard.sv(30) @ 2985: uvm_test_top.My env.scb [SCB] SAI ROI! A: -20, B: -25, Op: MUL_OP. DUT ra: -11020, Dung la: 500
+# UVM_INFO random_sequence.sv(28) @ 2985: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: ec OP: MUL_OP B: e7  result: d4f4
+# UVM_INFO driver.sv(34) @ 2985: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 6c OP: XOR_OP B: 65  result: 0000
+# UVM_INFO monitor.sv(30) @ 3015: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 6c OP: XOR_OP B: 65  result: 0009
+# UVM_INFO scoreboard.sv(34) @ 3015: uvm_test_top.My env.scb [SCB] DUNG: A: 6c OP: XOR_OP B: 65  result: 0009
+# UVM_INFO random_sequence.sv(28) @ 3015: uvm_test_top.My env.agt.SQR@@seq_rnd [SEQ] Xong lenh: A: 6c OP: XOR_OP B: 65  result: 0009
+# UVM_INFO full_test.sv(24) @ 3015: uvm_test_top [TEST] === BAT DAU MAX VALUE TEST ===
+# UVM_INFO driver.sv(34) @ 3015: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ff OP: MUL_OP B: ff  result: 0000
+# UVM_INFO monitor.sv(30) @ 3045: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ff OP: MUL_OP B: ff  result: fe01
+# UVM_ERROR scoreboard.sv(30) @ 3045: uvm_test_top.My env.scb [SCB] SAI ROI! A: -1, B: -1, Op: MUL_OP. DUT ra: -511, Dung la: 1
+# UVM_INFO corner_sequence.sv(25) @ 3045: uvm_test_top.My env.agt.SQR@@seq_max [MAX_SEQ] Gui lenh MAX: A: ff OP: MUL_OP B: ff  result: fe01
+# UVM_INFO driver.sv(34) @ 3045: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ff OP: MUL_OP B: ff  result: 0000
+# UVM_INFO monitor.sv(30) @ 3075: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ff OP: MUL_OP B: ff  result: fe01
+# UVM_ERROR scoreboard.sv(30) @ 3075: uvm_test_top.My env.scb [SCB] SAI ROI! A: -1, B: -1, Op: MUL_OP. DUT ra: -511, Dung la: 1
+# UVM_INFO corner_sequence.sv(25) @ 3075: uvm_test_top.My env.agt.SQR@@seq_max [MAX_SEQ] Gui lenh MAX: A: ff OP: MUL_OP B: ff  result: fe01
+# UVM_INFO driver.sv(34) @ 3075: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ff OP: MUL_OP B: ff  result: 0000
+# UVM_INFO monitor.sv(30) @ 3105: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ff OP: MUL_OP B: ff  result: fe01
+# UVM_ERROR scoreboard.sv(30) @ 3105: uvm_test_top.My env.scb [SCB] SAI ROI! A: -1, B: -1, Op: MUL_OP. DUT ra: -511, Dung la: 1
+# UVM_INFO corner_sequence.sv(25) @ 3105: uvm_test_top.My env.agt.SQR@@seq_max [MAX_SEQ] Gui lenh MAX: A: ff OP: MUL_OP B: ff  result: fe01
+# UVM_INFO driver.sv(34) @ 3105: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ff OP: MUL_OP B: ff  result: 0000
+# UVM_INFO monitor.sv(30) @ 3135: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ff OP: MUL_OP B: ff  result: fe01
+# UVM_ERROR scoreboard.sv(30) @ 3135: uvm_test_top.My env.scb [SCB] SAI ROI! A: -1, B: -1, Op: MUL_OP. DUT ra: -511, Dung la: 1
+# UVM_INFO corner_sequence.sv(25) @ 3135: uvm_test_top.My env.agt.SQR@@seq_max [MAX_SEQ] Gui lenh MAX: A: ff OP: MUL_OP B: ff  result: fe01
+# UVM_INFO driver.sv(34) @ 3135: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: ff OP: MUL_OP B: ff  result: 0000
+# UVM_INFO monitor.sv(30) @ 3165: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: ff OP: MUL_OP B: ff  result: fe01
+# UVM_ERROR scoreboard.sv(30) @ 3165: uvm_test_top.My env.scb [SCB] SAI ROI! A: -1, B: -1, Op: MUL_OP. DUT ra: -511, Dung la: 1
+# UVM_INFO corner_sequence.sv(25) @ 3165: uvm_test_top.My env.agt.SQR@@seq_max [MAX_SEQ] Gui lenh MAX: A: ff OP: MUL_OP B: ff  result: fe01
+# UVM_INFO full_test.sv(29) @ 3165: uvm_test_top [TEST] === BAT DAU ZERO VALUE TEST ===
+# UVM_INFO driver.sv(34) @ 3165: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 00 OP: MUL_OP B: 46  result: 0000
+# UVM_INFO monitor.sv(30) @ 3195: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 00 OP: MUL_OP B: 46  result: 0000
+# UVM_INFO scoreboard.sv(34) @ 3195: uvm_test_top.My env.scb [SCB] DUNG: A: 00 OP: MUL_OP B: 46  result: 0000
+# UVM_INFO driver.sv(34) @ 3195: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 00 OP: ADD_OP B: 04  result: 0000
+# UVM_INFO monitor.sv(30) @ 3225: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 00 OP: ADD_OP B: 04  result: 0004
+# UVM_INFO scoreboard.sv(34) @ 3225: uvm_test_top.My env.scb [SCB] DUNG: A: 00 OP: ADD_OP B: 04  result: 0004
+# UVM_INFO driver.sv(34) @ 3225: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 00 OP: ADD_OP B: f6  result: 0000
+# UVM_INFO monitor.sv(30) @ 3255: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 00 OP: ADD_OP B: f6  result: 00f6
+# UVM_ERROR scoreboard.sv(30) @ 3255: uvm_test_top.My env.scb [SCB] SAI ROI! A: 0, B: -10, Op: ADD_OP. DUT ra: 246, Dung la: -10
+# UVM_INFO driver.sv(34) @ 3255: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 00 OP: ADD_OP B: 43  result: 0000
+# UVM_INFO monitor.sv(30) @ 3285: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 00 OP: ADD_OP B: 43  result: 0043
+# UVM_INFO scoreboard.sv(34) @ 3285: uvm_test_top.My env.scb [SCB] DUNG: A: 00 OP: ADD_OP B: 43  result: 0043
+# UVM_INFO driver.sv(34) @ 3285: uvm_test_top.My env.agt.DRV [DRV] Dang lai transaction: A: 00 OP: MUL_OP B: b8  result: 0000
+# UVM_INFO monitor.sv(30) @ 3315: uvm_test_top.My env.agt.mon [MON] Thay giao dich: A: 00 OP: MUL_OP B: b8  result: 0000
+# UVM_INFO scoreboard.sv(34) @ 3315: uvm_test_top.My env.scb [SCB] DUNG: A: 00 OP: MUL_OP B: b8  result: 0000
+# UVM_INFO /home/dinhanh/Downloads/questa_install/questasim/verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 3415: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO functional_coverage.sv(63) @ 3415: uvm_test_top.My env.cov [COV] --------------------------------------------------
+# UVM_INFO functional_coverage.sv(64) @ 3415: uvm_test_top.My env.cov [COV] TONG DO BAO PHU (COVERAGE): 75.00 %
+# UVM_INFO functional_coverage.sv(65) @ 3415: uvm_test_top.My env.cov [COV] --------------------------------------------------
+# UVM_INFO /home/dinhanh/Downloads/questa_install/questasim/verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 3415: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  378
+# UVM_WARNING :    0
+# UVM_ERROR :   66
+# UVM_FATAL :    0
+# ** Report counts by id
+# [COV]     3
+# [DRV]   110
+# [MAX_SEQ]     5
+# [MON]   110
+# [RNTST]     1
+# [SCB]   110
+# [SEQ]   100
+# [TEST]     3
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : /home/dinhanh/Downloads/questa_install/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 3415 ns  Iteration: 68  Instance: /top
+# End time: 16:34:52 on Feb 16,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 7
