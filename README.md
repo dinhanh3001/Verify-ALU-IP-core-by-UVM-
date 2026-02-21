@@ -158,26 +158,13 @@ Current implementation uses:
 
 * Constrained random testing
 * Multiple randomized transactions
-
-Future improvements may include:
-
-* Functional coverage (covergroups)
-* Cross coverage (op × operands)
+* Functional coverage
+* Cross coverage
 * Directed corner-case sequences
 
 ---
 
-## Future Improvements
-
-* Add functional coverage model
-* Add corner-case sequence
-* Implement coverage-driven verification
-* Add Makefile/regression script
-* Add CI support
-
----
-
-## 👨‍💻 Author
+## Author
 
 Nguyen Dinh Anh - Computer Engineering Student
 Email: anhdinh30012005@gmail.com
