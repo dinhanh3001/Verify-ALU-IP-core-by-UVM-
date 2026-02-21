@@ -167,10 +167,10 @@ Current implementation uses:
 ## Author
 
 Nguyen Dinh Anh - Computer Engineering Student
+
 Email: anhdinh30012005@gmail.com
 
 ---
 
----
 
 
